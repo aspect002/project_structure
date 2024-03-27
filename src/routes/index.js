@@ -6,8 +6,6 @@ const echoRoutes = require('./echoRoutes');
 const usersRoutes = require('./usersRoutes');
 
 router.use('/users', usersRoutes);
-
-router.use('/users', usersRoutes);
 router.use('/echo', echoRoutes);
 
 module.exports = router;
