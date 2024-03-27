@@ -1,13 +1,11 @@
-const getEcho = (req, res) => {
-    res.send('Привет, Redev!');
-  };
-
-  const postEcho = (req, res) => {
+class EchoController {
+  getEcho(req, res) {
+    res.send('Привет, Redev!')
+  }
+  postEcho(req, res) {
     const { message } = req.body;
-    res.json({ message });
-  };
-
-  module.exports = {
-    getEcho,
-    postEcho,
-  };
+    console.log(message);
+    res.send(message);
+  }
+}
+module.exports = new EchoController()

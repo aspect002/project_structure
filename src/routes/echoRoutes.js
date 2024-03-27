@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const echoController = require('../controllers/echoController');
+const EchoController = require('../controllers/echoController');
 
-router.get('/', echoController.getEcho);
-router.post('/', echoController.postEcho);
+router.get('/', EchoController.getEcho);
+router.post('/', EchoController.postEcho);
 
 module.exports = router;
